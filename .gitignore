@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.env
+flask.log
+cloudflared-linux-amd64.deb
+*.zip
+.ipynb_checkpoints/
+.colab/
+.DS_Store

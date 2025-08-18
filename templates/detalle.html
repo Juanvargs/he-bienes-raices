@@ -1,0 +1,55 @@
+
+{% extends "base.html" %}
+{% block content %}
+
+<div class="row g-4">
+  <div class="col-lg-8">
+    <!-- Carrusel de imágenes -->
+    {% if p.imagenes and p.imagenes|length > 0 %}
+    <div id="galeria" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        {% for img in p.imagenes %}
+        <div class="carousel-item {% if loop.index == 1 %}active{% endif %}">
+          <img src="{{ img }}" class="d-block w-100" alt="Imagen {{ loop.index }}" style="max-height:520px; object-fit:cover;">
+        </div>
+        {% endfor %}
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#galeria" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#galeria" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    {% else %}
+      <div class="alert alert-secondary">Esta propiedad aún no tiene imágenes.</div>
+    {% endif %}
+
+    <!-- Video -->
+    {% if p.video %}
+    <div class="mt-4 ratio ratio-16x9">
+      <iframe src="{{ p.video }}" title="Video de la propiedad" allowfullscreen></iframe>
+    </div>
+    {% endif %}
+  </div>
+
+  <div class="col-lg-4">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="h5">{{ p.titulo }}</h3>
+        <div class="text-muted small mb-2">{{ p.ciudad }} — {{ p.barrio }}</div>
+        <div class="fw-bold h4 mb-3">{{ "{:,.0f}".format(p.precio) }} COP</div>
+        <ul class="list-unstyled small mb-0">
+          <li><strong>Tipo:</strong> {{ p.tipo|capitalize }}</li>
+          <li><strong>Estado:</strong> {{ p.estado|capitalize }}</li>
+          <li><strong>Área:</strong> {{ p.area_m2 }} m²</li>
+          {% if p.habitaciones %}<li><strong>Habitaciones:</strong> {{ p.habitaciones }}</li>{% endif %}
+          {% if p.banos %}<li><strong>Baños:</strong> {{ p.banos }}</li>{% endif %}
+          {% if p.parqueaderos %}<li><strong>Parqueaderos:</strong> {{ p.parqueaderos }}</li>{% endif %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

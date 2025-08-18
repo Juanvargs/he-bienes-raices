@@ -1,0 +1,25 @@
+
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-4">
+    <h2>{{ titulo }}</h2>
+    <div class="row">
+        {% for p in propiedades %}
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="{{ p.imagenes[0] }}" class="card-img-top" alt="{{ p.titulo }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ p.titulo }}</h5>
+                    <p class="card-text">
+                        {{ p.ciudad }} - {{ p.barrio }}<br>
+                        Área: {{ p.area_m2 }} m²<br>
+                        Precio: ${{ "{:,.0f}".format(p.precio) }}
+                    </p>
+                    <a href="/propiedad/{{ p.id }}" class="btn btn-primary">Ver detalles</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
