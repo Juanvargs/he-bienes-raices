@@ -14,10 +14,9 @@
       "/static/img/MACNA1/IMG-20250814-WA0033.jpg",
       "/static/img/MACNA1/IMG-20250814-WA0035.jpg",
       "static/img/propiedades/casa1/IMG-20250814-WA0033.jpg",
-      "https://picsum.photos/seed/101/800/600"
     ],
     "imagen": "static/img/propiedades/casa1/Imagen de WhatsApp 2025-08-19 a las 23.58.29_c5aa75e9.jpg",
-    "video": "https://www.youtube.com/embed/VIDEO_ID_1",
+    "video": null
     "destacado": true,
     "habitaciones": 3,
     "banos": 2,
