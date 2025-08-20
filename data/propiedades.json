@@ -9,16 +9,12 @@
     "area_m2": 120,
     "precio": 450000000,
     "imagenes": [
-      "/static/img/MACNA1/IMG-20250814-WA0027.jpg",
-      "/static/img/MACNA1/IMG-20250814-WA0032.jpg",
+      "static/img/propiedades/casa1/Imagen de WhatsApp 2025-08-19 a las 23.58.29_c5aa75e9.jpg",
+      "/static/img/propiedades/casa1/IMG-20250814-WA0035.jpg",
       "/static/img/MACNA1/IMG-20250814-WA0033.jpg",
       "/static/img/MACNA1/IMG-20250814-WA0035.jpg",
-      "https://picsum.photos/seed/100/800/600",
-      "https://picsum.photos/seed/101/800/600",
-      "https://picsum.photos/seed/102/800/600",
-      "https://picsum.photos/seed/103/800/600",
-      "https://picsum.photos/seed/104/800/600",
-      "https://picsum.photos/seed/105/800/600"
+      "static/img/propiedades/casa1/IMG-20250814-WA0033.jpg",
+      "https://picsum.photos/seed/101/800/600"
     ],
     "imagen": "/static/img/MACNA1/IMG-20250814-WA0027.jpg",
     "video": "https://www.youtube.com/embed/VIDEO_ID_1",
