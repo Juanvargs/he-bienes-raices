@@ -9,13 +9,13 @@
     "area_m2": 120,
     "precio": 200000,
     "imagenes": [
-      "static/img/propiedades/primaveras de la colina/portada.jpg",
-      "static/img/propiedades/primaveras de la colina/macna1.jpg",
-      "static/img/propiedades/primaveras de la colina/macna3.jpg",
-      "static/img/propiedades/primaveras de la colina/macna4.jpg"
+      "static/img/propiedades/primaveras_de_la_colina/portada.jpg",
+      "static/img/propiedades/primaveras_de_la_colina/macna1.jpg",
+      "static/img/propiedades/primaveras_de_la_colina/macna3.jpg",
+      "static/img/propiedades/primaveras_de_la_colina/macna4.jpg"
     ],
-    "imagen": "static/img/propiedades/primaveras de la colina/portada.jpg",
-    "video": "static/img/propiedades/primaveras de la colina/videomacna.mp4",
+    "imagen": "static/img/propiedades/primaveras_de_la_colina/portada.jpg",
+    "video": "static/img/propiedades/primaveras_de_la_colina/videomacna.mp4",
     "destacado": true,
     "habitaciones": 3,
     "banos": 2,
