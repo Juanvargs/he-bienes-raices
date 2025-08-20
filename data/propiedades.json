@@ -15,7 +15,7 @@
       "static/img/propiedades/Primaveras_de_la_colina/macna3.jpg",
       "static/img/propiedades/Primaveras_de_la_colina/macna4.jpg"
     ],
-    "static/img/propiedades/Primaveras_de_la_colina/portada.jpg",
+    "imagen": "static/img/propiedades/Primaveras_de_la_colina/portada.jpg",
     "video": "static/img/propiedades/Primaveras_de_la_colina/videomacna.mp4",
     "destacado": true,
     "habitaciones": 3,
