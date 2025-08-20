@@ -7,14 +7,15 @@
     "ciudad": "Neiva",
     "barrio": "Santa Clara",
     "area_m2": 120,
-    "precio": 450000000,
+    "precio": 200000,
     "imagenes": [
-      "/static/img/propiedades/casa1/foto1.jpg",
-      "/static/img/propiedades/casa1/foto2.jpg",
-      "/static/img/propiedades/casa1/foto3.jpg"
+      "static/img/propiedades/primaveras de la colina/portada.jpg",
+      "static/img/propiedades/primaveras de la colina/macna1.jpg",
+      "static/img/propiedades/primaveras de la colina/macna3.jpg",
+      "static/img/propiedades/primaveras de la colina/macna4.jpg"
     ],
-    "imagen": "/static/img/propiedades/casa1/foto1.jpg",
-    "video": "https://www.youtube.com/embed/VIDEO_ID_1",
+    "imagen": "static/img/propiedades/primaveras de la colina/portada.jpg",
+    "video": "static/img/propiedades/primaveras de la colina/videomacna.mp4",
     "destacado": true,
     "habitaciones": 3,
     "banos": 2,
