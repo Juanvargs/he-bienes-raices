@@ -1,1 +1,4 @@
+git add .
+git commit -m "Renombrar carpeta de propiedades"
+git push origin main
 
