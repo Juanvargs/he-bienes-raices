@@ -2,15 +2,16 @@
 
 {% block content %}
 <div class="row g-4">
-  <!-- Columna izquierda: Carrusel de imágenes -->
+
+  <!-- Columna izquierda (imágenes + info) -->
   <div class="col-lg-8">
+    <!-- Carrusel de imágenes -->
     {% if p.imagenes and p.imagenes|length > 0 %}
-    <div id="galeria" class="carousel slide" data-bs-ride="carousel">
+    <div id="galeria" class="carousel slide mb-4" data-bs-ride="carousel">
       <div class="carousel-inner">
         {% for img in p.imagenes %}
         <div class="carousel-item {% if loop.index == 1 %}active{% endif %}">
-          <img src="{{ img }}" class="d-block w-100" alt="Imagen {{ loop.index }}"
-               style="max-height:520px; object-fit:cover;">
+          <img src="{{ img }}" class="d-block w-100" alt="Imagen {{ loop.index }}" style="max-height:520px; object-fit:cover;">
         </div>
         {% endfor %}
       </div>
@@ -24,21 +25,9 @@
     {% else %}
     <div class="alert alert-secondary">Esta propiedad aún no tiene imágenes.</div>
     {% endif %}
-  </div>
 
-  <!-- Columna derecha: Video arriba + Información abajo -->
-  <div class="col-lg-4 d-flex flex-column">
-    {% if p.video %}
-    <div class="flex-grow-1">
-      <div class="ratio" style="--bs-aspect-ratio: 177.77%;">
-        <!-- 9:16 vertical -->
-        <iframe src="{{ p.video }}" title="Video de la propiedad"
-                style="width:100%; height:100%;" allowfullscreen></iframe>
-      </div>
-    </div>
-    {% endif %}
-
-    <div class="card mt-3">
+    <!-- Información debajo de las imágenes -->
+    <div class="card">
       <div class="card-body">
         <h3 class="h5">{{ p.titulo }}</h3>
         <div class="text-muted small mb-2">{{ p.ciudad }} — {{ p.barrio }}</div>
@@ -54,5 +43,15 @@
       </div>
     </div>
   </div>
+
+  <!-- Columna derecha (video) -->
+  <div class="col-lg-4">
+    {% if p.video %}
+    <div class="video-container" style="height:520px; display:flex; align-items:center; justify-content:center;">
+      <iframe src="{{ p.video }}" title="Video de la propiedad" style="width:100%; height:100%; object-fit:cover;" allowfullscreen></iframe>
+    </div>
+    {% endif %}
+  </div>
 </div>
 {% endblock %}
+
