@@ -44,14 +44,16 @@
     </div>
   </div>
 
-  <!-- Columna derecha (video) -->
-  <div class="col-lg-4">
-    {% if p.video %}
-    <div class="video-container" style="height:520px; display:flex; align-items:center; justify-content:center;">
-      <iframe src="{{ p.video }}" title="Video de la propiedad" style="width:100%; height:100%; object-fit:cover;" allowfullscreen></iframe>
-    </div>
-    {% endif %}
+<!-- Columna derecha (video vertical) -->
+<div class="col-lg-4">
+  {% if p.video %}
+  <div class="video-container" style="position: relative; width: 100%; padding-top: 177.78%;"> <!-- 16:9 sería 56.25%, aquí 9:16 -->
+    <iframe src="{{ p.video }}" 
+            title="Video de la propiedad" 
+            style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; border-radius:12px;" 
+            allowfullscreen></iframe>
   </div>
+  {% endif %}
 </div>
 {% endblock %}
 
